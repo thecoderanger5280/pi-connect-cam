@@ -24,10 +24,11 @@ It just pipes the output of rpicam-jpeg to a curl command. The curl sends the im
 2. Flash Pi OS to your SD card - it's useful to configure WiFi and SSH at this point using Pi Imager.
 3. Insert SD card and ensure the device connects to your network
 4. Connect to the device via SSH
-5. Download the code using curl.
-6. Extract main (tar -xzf).
-7. CD into the folder and make the install.sh file exacutable (chmod u+x).
-8. Run the install.sh file (sudo ./install.sh)
+5. Download the code using curl. `curl -OL https://api.github.com/repos/thecoderanger5280/pi-connect-cam/tarball/main`
+6. Extract main. `tar -xzf main`
+7. CD into the folder that was just created.
+8. Make the install file executable. `chmod u+x install.sh`
+9. Run the install.sh file. `sudo ./install.sh`
 
 ### Resources
 
