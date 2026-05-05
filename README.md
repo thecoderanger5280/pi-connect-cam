@@ -28,7 +28,8 @@ It just pipes the output of rpicam-jpeg to a curl command. The curl sends the im
 6. Extract main. `tar -xzf main`
 7. CD into the folder that was just created.
 8. Make the install file executable. `chmod u+x install.sh`
-9. Run the install.sh file. `sudo ./install.sh`
+9. Run the install.sh file. `sudo ./install.sh [USERNAME] [TOKEN] [UUID]`
+    - Where: [USERNAME] is your Pi OS Username, [TOKEN] is the token from Prusa Connect, [UUID] is the UUID you generated
 
 ### Resources
 
