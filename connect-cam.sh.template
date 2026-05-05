@@ -2,7 +2,7 @@
 
 while true; do
 	echo "PUTing image"
-	libcamera-jpeg -t500 -v0 -o- \
+	rpicam-jpeg -t500 -v0 -o- \
 	| curl 'https://webcam.connect.prusa3d.com/c/snapshot' \
 	  -X 'PUT' \
 	  -H 'content-type: image/jpg' \
@@ -11,5 +11,4 @@ while true; do
 	  --silent \
 	  --data-binary "@-" \
 	  --compressed
-	sleep 10 # >= 10s please - don't ruin this for everyone else
 done
